@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Publish Artifacts') {
             steps {
-                echo 'manish'
+                echo 'Deploy to Artifacts'
             }
             
         }
