@@ -10,7 +10,6 @@ pipeline {
             steps {
                 echo 'Deploy to Artifacts'
             }
-            
         }
     }
 }
