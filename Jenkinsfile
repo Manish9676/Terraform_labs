@@ -4,7 +4,6 @@ pipeline {
         stage('Git Checkout') {
             steps {
             checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'terraform', url: 'git@github.com:Manish9676/Terraform_labs.git']]])
-            git clone https://github.com/Manish9676/Terraform_labs.git      
             }
          }
         stage('Publish Artifacts') {
