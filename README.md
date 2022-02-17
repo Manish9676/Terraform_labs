@@ -1,6 +1,6 @@
 # Terraform_labs
 
-### Install Terraform on Linux(Ubuntu)
+## Install Terraform on Linux(Ubuntu)
 
 https://learn.hashicorp.com/tutorials/terraform/install-cli
 
