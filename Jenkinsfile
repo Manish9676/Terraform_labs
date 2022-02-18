@@ -8,7 +8,7 @@ pipeline {
          }
         stage('Publish Artifacts') {
             steps {
-                echo 'deploy-Artifacts'
+                echo 'deeploy-Artifacts'
             }
         }
     }
