@@ -8,13 +8,10 @@ pipeline {
          }
         stage('publish artifacts') {
             steps {
-<<<<<<< HEAD
-                echo 'deployartifacts'
-=======
                 echo 'Deploy-Artifacts'
->>>>>>> 28091712b4ffeac161cdeeac4e11ee207a34aeef
             }
         }
+        publishChecks actions: [[identifier: '', label: '']], detailsURL: 'https://github.com/Manish9676/Terraform_labs', name: 'Test', status: 'IN_PROGRESS', title: 'Test'
     }
 }
 
