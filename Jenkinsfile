@@ -8,7 +8,11 @@ pipeline {
          }
         stage('publish artifacts') {
             steps {
+<<<<<<< HEAD
                 echo 'deployartifacts'
+=======
+                echo 'Deploy-Artifacts'
+>>>>>>> 28091712b4ffeac161cdeeac4e11ee207a34aeef
             }
         }
     }
