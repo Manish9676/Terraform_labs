@@ -11,7 +11,6 @@ pipeline {
                 echo 'Deploy-Artifacts'
             }
         }
-        publishChecks actions: [[identifier: '', label: '']], detailsURL: 'https://github.com/Manish9676/Terraform_labs', name: 'Test', status: 'IN_PROGRESS', title: 'Test'
     }
 }
 
