@@ -14,13 +14,13 @@ pipeline {
     }
     post {
             success {
-                       curl "https://api.GitHub.com/repos/Manish9676/Terraform_labs/statuses/$GIT_COMMIT?access_token=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" \
+                       curl "https://api.GitHub.com/repos/Manish9676/Terraform_labs/statuses/$GIT_COMMIT?access_token=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" \
                        -H "Content-Type: application/json" \
                        -X POST \
                        -d "{\"state\": \"success\",\"context\": \"continuous-integration/jenkins\", \"description\": \"Jenkins\", \"target_url\": \"http://34.209.63.253:8080/job/test/$BUILD_NUMBER/console\"}"
             }
             failure {
-                     curl "https://api.GitHub.com/repos/Manish9676/Terraform_labs/statuses/$GIT_COMMIT?access_token=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" \
+                     curl "https://api.GitHub.com/repos/Manish9676/Terraform_labs/statuses/$GIT_COMMIT?access_token=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" \
                      -H "Content-Type: application/json" \
                      -X POST \
                      -d "{\"state\": \"failure\",\"context\": \"continuous-integration/jenkins\", \"description\": \"Jenkins\", \"target_url\": \"http://34.209.63.253:8080/job/test/$BUILD_NUMBER/console\"}"
