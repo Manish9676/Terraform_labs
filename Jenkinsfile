@@ -6,7 +6,7 @@ pipeline {
             checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'terraform', url: 'git@github.com:Manish9676/Terraform_labs.git']]])
             }
          }
-        stage('Publish artifacts') {
+        stage('publish artifacts') {
             steps {
                 echo 'deploy-Artifacts'
             }
