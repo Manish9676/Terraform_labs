@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "manishmyana"
     workspaces {
-      tags = ["Terraform_dev"]
+      tags = ["Terraform_prod"]
     }
   }
 }
